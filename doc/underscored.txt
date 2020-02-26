@@ -1,0 +1,30 @@
+*underscored.txt*  Swap space to underscore
+
+Author:  Pirey <https://github.com/pirey>
+License: Same terms as Vim itself (see |license|)
+
+This plugin is only available if 'compatible' is not set.
+
+SUMMARY                                         *underscored*
+
+This plugin let you swap space with underscore.  This is useful when you have
+to write variable or function names in language with snake_case convention such
+as python, ruby, etc.
+
+USAGE                                         *underscored-usage*
+
+The plugin can be toggled in insert mode. When enabled, it will swap space with
+underscore and vice versa. You can toggle it again to disable, or you can leave
+insert mode, and the plugin will automatically disabled. Normal mode commands,
+other buffers, and other applications are unaffected.
+
+
+MAPPING                                        *underscored-mapping*
+The default insert mode mapping is <C-G><Space>. Additionally, <C-_> is mapped
+in insert mode if it is otherwise unused. <Plug>UnderscoredToggle,
+<Plug>UnderscoredEnable, and <Plug>UnderscoredDisable are provided if you would
+prefer to define your own maps.
+
+The plugin is automatically disabled after leaving insert mode.
+
+ vim:tw=78:et:ft=help:norl:
